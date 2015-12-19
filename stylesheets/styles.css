@@ -330,4 +330,5 @@ footer {
 /* custom code */
 #blognav{
  list-style-type: circle; 
+ display: block;
 }
