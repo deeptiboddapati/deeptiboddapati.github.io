@@ -326,3 +326,8 @@ footer {
  color:blue; 
 }
 }
+
+/* custom code */
+#blognav{
+ list-style-type: circle; 
+}
