@@ -1,3 +1,7 @@
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+
 <body>
   <div class="wrapper">
     <header>
@@ -14,20 +18,51 @@
       </div>
       <div role="navigation">
         <ul class="nav nav-pills nav-stacked">
-          <li class="btn-default">About my Programs</li>
-          <li class="btn-default">Thoughts about Techsupport</li>
+          <li>
+            <div class="btn-group">
+              <button class="dropdown btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Dropdown
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu nav nav-pills nav-stacked">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="btn-default" type="button" data-toggle="collapse" data-target="#navc" aria-expanded="false" aria-controls="navc">Thoughts about Techsupport</li>
+          <div class="collapse" id="navc">
+
+            <ul class=" nav nav-pills nav-stacked">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </div>
           <li class="btn-default">Programming Tutorials</li>
         </ul>
       </div>
-    <div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
-  <span class="caret"></span></button>
-  <ul class="dropdown-menu">
-    <li><a href="#">HTML</a></li>
-    <li><a href="#">CSS</a></li>
-    <li><a href="#">JavaScript</a></li>
-  </ul>
-</div>
+
+
+      <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#navc" aria-expanded="false" aria-controls="navc">
+        Button with data-target
+      </button>
+      <div class="collapse" id="navc">
+
+        <ul class=" nav nav-pills nav-stacked">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div>
+
     </header>
     <section>
       <h3>
