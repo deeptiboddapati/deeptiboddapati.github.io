@@ -1,19 +1,13 @@
-$('.readmore').click(function(){
-		var $this = $(this);
-		$this.toggleClass('readmore');
-		if($this.hasClass('readmore')){
-			$this.text('See More');			
-		} else {
-			$this.text('See Less');
-		}
-	});
 
-$(document).ready(function(){
-   window.setTimeout(hideNav, 300);
 
 /** ===========================================
-    Hide / show the master navigation menu
+    Hide / show the mobile navigation menu
 ============================================ */
+
+$(document).ready(function(){
+
+
+
 
    console.log('Window Height is: ' + $(window).height());
    console.log('Document Height is: ' + $(document).height());
@@ -30,14 +24,14 @@ $(document).ready(function(){
       /*
         If the current scroll is greater than the previous scroll (i.e we're scrolling down the page), hide the nav.
       */
-      if (currentScroll < previousScroll ){
-        window.setTimeout(showNav, 300);
+      if (currentScroll > previousScroll ){
+        window.setTimeout(hideNav, 300);
       /*
         Else we are scrolling up (i.e the previous scroll is greater than the current scroll), so show the nav.
       */
       } 
       else {
-        window.setTimeout(hideNav, 300);
+        window.setTimeout(showNav, 300);
       }
       /* 
         Set the previous scroll value equal to the current scroll.
@@ -51,10 +45,21 @@ $(document).ready(function(){
   });
   
   function hideNav() {
-    $("[data-nav-status='toggle']").removeClass("visible-xs").addClass("hidden");
+    $("[data-nav-status='toggle']").addClass("hidden");
+
   }
   function showNav() {
-    $("[data-nav-status='toggle']").removeClass("hidden").addClass("visible-xs");
+    $("[data-nav-status='toggle']").removeClass("hidden");
   }
 
 });
+
+$('.readmore').click(function(){
+    var $this = $(this);
+    $this.toggleClass('readmore');
+    if($this.hasClass('readmore')){
+      $this.text('See More');     
+    } else {
+      $this.text('See Less');
+    }
+  });
