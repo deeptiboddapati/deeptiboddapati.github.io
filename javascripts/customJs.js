@@ -9,7 +9,7 @@ $('.readmore').click(function(){
 	});
 
 $(document).ready(function(){
-   window.setTimeout(hideNav, 300);
+   
 
 /** ===========================================
     Hide / show the master navigation menu
