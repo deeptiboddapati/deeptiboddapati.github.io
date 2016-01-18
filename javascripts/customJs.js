@@ -30,14 +30,14 @@ $(document).ready(function(){
       /*
         If the current scroll is greater than the previous scroll (i.e we're scrolling down the page), hide the nav.
       */
-      if (currentScroll < previousScroll ){
-        window.setTimeout(showNav, 300);
+      if (currentScroll > previousScroll ){
+        window.setTimeout(hideNav, 300);
       /*
         Else we are scrolling up (i.e the previous scroll is greater than the current scroll), so show the nav.
       */
       } 
       else {
-        window.setTimeout(hideNav, 300);
+        window.setTimeout(showNav, 300);
       }
       /* 
         Set the previous scroll value equal to the current scroll.
