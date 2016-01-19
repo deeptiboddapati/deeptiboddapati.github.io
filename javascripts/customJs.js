@@ -1,6 +1,4 @@
 
-
-
 $(document).ready(function(){
 
 
@@ -35,20 +33,24 @@ $(document).ready(function(){
       /* 
         Set the previous scroll value equal to the current scroll.
       */
-      previousScroll = currentScroll;
+      
     }
     else{
       window.setTimeout(hideNav, 300);
     }
-
+previousScroll = currentScroll;
   });
   
   function hideNav() {
-    $("[data-nav-status='toggle']").addClass("hidden");
+   
+    $("[data-nav-status='toggle']").addClass('hidden');
 
   }
   function showNav() {
-    $("[data-nav-status='toggle']").removeClass("hidden");
+     
+      $("[data-nav-status='toggle']").removeClass("hidden")
+   
+ 
   }
 
 });
@@ -63,4 +65,3 @@ $('.readmore').click(function(){
       $this.text('See Less');
     }
   });
-
