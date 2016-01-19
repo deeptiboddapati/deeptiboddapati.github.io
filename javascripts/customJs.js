@@ -1,9 +1,4 @@
 
-<<<<<<< HEAD
-=======
-$(document).ready(function(){
-   
->>>>>>> 54a76b6633807da54c86703005910be73bf0e704
 
 /** ===========================================
     Hide / show the mobile navigation menu
@@ -58,7 +53,7 @@ $(document).ready(function(){
   }
 
 });
-<<<<<<< HEAD
+
 
 $('.readmore').click(function(){
     var $this = $(this);
@@ -69,5 +64,4 @@ $('.readmore').click(function(){
       $this.text('See Less');
     }
   });
-=======
->>>>>>> 54a76b6633807da54c86703005910be73bf0e704
+
