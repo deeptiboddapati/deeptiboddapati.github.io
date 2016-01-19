@@ -35,24 +35,15 @@ body{
   color: #727272;
   font-weight: 400;
 }
-
-
-div{
-  margin:2%;
-}
-p,table,pre,dl {
-  margin: 0 0 ;
-  text-align: justify;
+.output {
+  color: blue;
 }
 
 
-h1,h2,h3{
-  line-height: 1.1;
-}
 
-h1{
-  font-size: 28px;
-}
+
+
+
 
 h2{
   color: #393939;
@@ -95,7 +86,7 @@ pre {
   color: #333;
   font-size: 12px;
 }
-*/
+
 pre{
   padding: 8px 15px;
   background: #f8f8f8;
@@ -103,6 +94,7 @@ pre{
   border: 1px solid #e5e5e5;
   overflow-x: auto;
 }
+*/
 
 table{
   width: 100%;
@@ -111,7 +103,7 @@ table{
 
 th,td{
   text-align: left;
-  padding: 5px 10px;
+  
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -127,12 +119,12 @@ th{
 img{
   max-width: 100%;
 }
-
+/*
 header{
   float: left;
   position:fixed;
 }
-/*
+
 header ul {
   list-style: none;
   padding-left: 1%;
@@ -175,14 +167,14 @@ header ul a strong {
   display: block;
   color: #222;
 }
-*/
+
 section{
   width: 500px;
   float: right;
   padding-bottom: 50px;
 }
 
-/*
+
 hr {
   border: 0;
   background: #e5e5e5;
@@ -190,26 +182,40 @@ hr {
   margin: 0 0 20px;
 }
 */
-footer{
-  width: 270px;
-  float: left;
-  position: fixed;
-  bottom: 50px;
-  
-}
+
 
 
 @media print, screen and (max-width: 960px){
   .nomobile{
     display:none;
   }
-      
-  header, section, footer {
-    float: none;
-    position: static;
-    width: 480px;
-    margin: auto;
+  header, section, footer{
+  float: none;
+  position: static;
+  width: 80%;
+  margin: auto;
+  border-color: #3498db;
+  border-style: none none solid none;
+  border-width: 1%;
+}
+  .wrapper{
+    font-size: 20px;
+  }   
+  .wrapper h1{
+  font-size:1.5em;
   }
+  .wrapper h3, .wrapper h2{
+  font-size: 1.3em;
+  } 
+  .wrapper p, a{
+    font-size: 1em;
+  }    
+ .firstsec h2 {
+  border-color: #3498db;
+  border-style: none none solid none;
+  border-width: 1%;
+}
+
 }
 /* 
   header {
@@ -235,6 +241,8 @@ footer{
 */
 @media print, screen and (max-width: 720px){
 
+
+  
 }
 /*
  header ul,
@@ -266,34 +274,17 @@ header ul li + li + li {
 
 
 @media print, screen and (max-width: 480px){
+  p,table,pre,dl {
+
+  text-align: justify;
+}
+  .wrapper{
+    font-size: 14px;
+  }
 
 
-  h1{
-  font-size: 27px;
-  }
-  h3{
-  font-size: 22px;
-  }
-  
- 
-
-  header, section, footer {
-  width: 290px;
-  margin: auto;
-  border-color: #3498db;
-  border-style: none none solid none;
-  border-width: 1%;
-  }
 }  
 
 
-.output {
-  color: blue;
-}
 
-.firstsec h2 {
-  border-color: #3498db;
-  border-style: none none solid none;
-  border-width: 1%;
-}
 
