@@ -53,6 +53,7 @@ $(document).ready(function(){
 
 });
 
+
 $('.readmore').click(function(){
     var $this = $(this);
     $this.toggleClass('readmore');
