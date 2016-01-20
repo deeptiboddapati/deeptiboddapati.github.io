@@ -32,8 +32,11 @@
 
 body .wrapper{
   font:16px/1 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+padding:5%;
 }
-
+div{
+  margin:2%
+}
 .output {
   color: blue;
 }
@@ -43,7 +46,6 @@ img{
 }
 
 header{
-  margin-left:2%;
   float: left;
   position:fixed;
 }
@@ -56,7 +58,7 @@ section{
 footer{
   float:left;
   position:fixed;
-  bottom: 50px;
+  bottom: 1px;
   margin-left:2%;
 }
   
@@ -79,6 +81,11 @@ footer{
   .nomobile{
     display:none;
   }
+  body .wrapper{
+    text-align:center;
+    padding:0;
+    margin:auto;
+  }
   header, section, footer{
   float: none;
   position: static;
@@ -100,7 +107,11 @@ footer{
 }
   body .wrapper{
     font-size: 14px;
+    
   }
 
 
 }  
+
+
+
