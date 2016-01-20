@@ -33,16 +33,16 @@
 body .wrapper{
   font:16px/1 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; 
 padding:5%;
+color:#727272; 
 }
-div{
-  margin:2%
-}
+
 .output {
   color: blue;
 }
 
 img{
   max-width: 100%;
+  margin:2% 0 4% 0;
 }
 
 header{
@@ -64,9 +64,15 @@ footer{
   
   .wrapper h1{
   font-size:1.5em;
+  color:#222;
+  font-weight: 700;
+  font-style: normal;
   }
   .wrapper h3, .wrapper h2{
+  font-weight: 400;
+  font-style: italic;
   font-size: 1.3em;
+  color:#222;
   } 
   .wrapper p, a{
     font-size: 1em;
@@ -75,6 +81,11 @@ footer{
   border-color: #3498db;
   border-style: none none solid none;
   border-width: 1%;
+}
+
+#catchphrase code{
+ color:#000;
+ background-color:#fff;
 }
 
 @media print, screen and (max-width: 960px){
@@ -102,16 +113,9 @@ footer{
 
 @media print, screen and (max-width: 480px){
   p,table,pre,dl {
-
   text-align: justify;
 }
   body .wrapper{
-    font-size: 14px;
-    
+    font-size: 14px; 
   }
-
-
 }  
-
-
-

@@ -1,16 +1,11 @@
 
 $(document).ready(function(){
-
-
 /** ===========================================
     Hide / show the mobile navigation menu
 ============================================ */
-
    console.log('Window Height is: ' + $(window).height());
    console.log('Document Height is: ' + $(document).height());
-
   var previousScroll = 0;
-
   $(window).scroll(function(){
 
     var currentScroll = $(this).scrollTop();
@@ -32,29 +27,20 @@ $(document).ready(function(){
       }
       /* 
         Set the previous scroll value equal to the current scroll.
-      */
-      
+      */ 
     }
     else{
       window.setTimeout(hideNav, 300);
     }
 previousScroll = currentScroll;
   });
-  
   function hideNav() {
-   
     $("[data-nav-status='toggle']").addClass('hidden');
-
   }
   function showNav() {
-     
       $("[data-nav-status='toggle']").removeClass("hidden")
-   
- 
   }
-
 });
-
 
 $('.readmore').click(function(){
     var $this = $(this);
