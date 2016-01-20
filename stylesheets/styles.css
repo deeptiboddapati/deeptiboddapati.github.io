@@ -51,7 +51,7 @@ header{
 }
 
 section{
-  width:55%;
+  width:60%;
   float: right;
   padding-bottom: 50px;
 }
@@ -119,3 +119,6 @@ footer{
     font-size: 14px; 
   }
 }  
+
+
+
