@@ -30,98 +30,12 @@
   src: url('../fonts/Noto-Sans-700italic/Noto-Sans-700italic.eot?#iefix') format('embedded-opentype'), local('Noto Sans Bold Italic'), local('Noto-Sans-700italic'), url('../fonts/Noto-Sans-700italic/Noto-Sans-700italic.woff2') format('woff2'), url('../fonts/Noto-Sans-700italic/Noto-Sans-700italic.woff') format('woff'), url('../fonts/Noto-Sans-700italic/Noto-Sans-700italic.ttf') format('truetype'), url('../fonts/Noto-Sans-700italic/Noto-Sans-700italic.svg#NotoSans') format('svg');
 }
 
-body{
-  background-color: #fff;
-  color: #727272;
-  font-weight: 400;
+body .wrapper{
+  font:16px/1 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; 
 }
 
-
-div{
-  margin:2%;
-}
-p,table,pre,dl {
-  margin: 0 0 ;
-  text-align: justify;
-}
-
-
-h1,h2,h3{
-  line-height: 1.1;
-}
-
-h1{
-  font-size: 28px;
-}
-
-h2{
-  color: #393939;
-}
-
-h3,h4,h5,h6{
-  color: #393939;
-}
-
-a{
-  color: #39c;
-  text-decoration: none;
-}
-
-a:hover{
-  color: #069;
-}
-
-a small{
-  font-size: 11px;
-  color: #777;
-  margin-top: -0.3em;
-  display: block;
-}
-
-a:hover small{
-  color: #777;
-}
-
-blockquote{
-  border-left: 1px solid #e5e5e5;
-  margin: 0;
-  padding: 0 0 0 20px;
-  font-style: italic;
-}
-/*
-code,
-pre {
-  font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
-  color: #333;
-  font-size: 12px;
-}
-*/
-pre{
-  padding: 8px 15px;
-  background: #f8f8f8;
-  border-radius: 5px;
-  border: 1px solid #e5e5e5;
-  overflow-x: auto;
-}
-
-table{
-  width: 100%;
-  border-collapse: collapse;
-}
-
-th,td{
-  text-align: left;
-  padding: 5px 10px;
-  border-bottom: 1px solid #e5e5e5;
-}
-
-dt{
-  color: #444;
-  font-weight: 700;
-}
-
-th{
-  color: #444;
+.output {
+  color: blue;
 }
 
 img{
@@ -129,171 +43,64 @@ img{
 }
 
 header{
+  margin-left:2%;
   float: left;
   position:fixed;
 }
-/*
-header ul {
-  list-style: none;
-  padding-left: 1%;
-  width: 270px;
-}
-header li {
-  width: 100%;
-  height: auto;
-}
-header li:first-child a {
-  border-radius: 5px 0 0 5px;
-}
-header li:last-child a {
-  border-radius: 0 5px 5px 0;
-}
-header ul a {
-  line-height: 1;
-  font-size: 11px;
-  color: #999;
-  display: block;
-  text-align: left;
-  padding-top: 6px;
-}
-header ul a:hover {
-  color: #999;
-}
-header ul a:active {
-  background-color: #f0f0f0;
-}
-strong {
-  color: #222;
-  font-weight: 700;
-}
-header ul li + li + li {
-  border-right: none;
-  width: 89px;
-}
-header ul a strong {
-  font-size: 14px;
-  display: block;
-  color: #222;
-}
-*/
+
 section{
-  width: 500px;
+  width:55%;
   float: right;
   padding-bottom: 50px;
 }
-
-/*
-hr {
-  border: 0;
-  background: #e5e5e5;
-  height: 1px;
-  margin: 0 0 20px;
-}
-*/
 footer{
-  width: 270px;
-  float: left;
-  position: fixed;
+  float:left;
+  position:fixed;
   bottom: 50px;
-  
+  margin-left:2%;
 }
-
+  
+  .wrapper h1{
+  font-size:1.5em;
+  }
+  .wrapper h3, .wrapper h2{
+  font-size: 1.3em;
+  } 
+  .wrapper p, a{
+    font-size: 1em;
+  }    
+ .firstsec h2 {
+  border-color: #3498db;
+  border-style: none none solid none;
+  border-width: 1%;
+}
 
 @media print, screen and (max-width: 960px){
   .nomobile{
     display:none;
   }
-      
-  header, section, footer {
-    float: none;
-    position: static;
-    width: 480px;
-    margin: auto;
-  }
-}
-/* 
-  header {
-    padding-right: 320px;
-  }
-  section {
-    border: 1px solid #e5e5e5;
-    border-width: 1px 0;
-    padding: 20px 0;
-    margin: 0 0 20px;
-  }
-  header a small {
-    display: inline;
-  }
- 
-  header ul {
-    position: absolute;
-    right: 50px;
-    top: 52px;
-  }
-  
-}
-*/
-@media print, screen and (max-width: 720px){
-
-}
-/*
- header ul,
-  header p.view {
-    position: static;
-  }
-  pre,
-  code {
-    word-wrap: normal;
-  }
-header ul {
-  width: 99%;
-}
-header li,
-header ul li + li + li {
-  width: 33%;
-}
-*/
-
-/*  
-@media print {
-  body {
-    padding: 0.4in;
-    font-size: 12pt;
-    color: #444;
-  }
-}
-  */
-
-
-@media print, screen and (max-width: 480px){
-
-
-  h1{
-  font-size: 27px;
-  }
-  h3{
-  font-size: 22px;
-  }
-  
- 
-
-  header, section, footer {
-  width: 290px;
+  header, section, footer{
+  float: none;
+  position: static;
+  width: 80%;
   margin: auto;
   border-color: #3498db;
   border-style: none none solid none;
   border-width: 1%;
+}
+}
+
+@media print, screen and (max-width: 720px){
+}
+
+@media print, screen and (max-width: 480px){
+  p,table,pre,dl {
+
+  text-align: justify;
+}
+  body .wrapper{
+    font-size: 14px;
   }
+
+
 }  
-
-
-.output {
-  color: blue;
-}
-
-.firstsec h2 {
-  border-color: #3498db;
-  border-style: none none solid none;
-  border-width: 1%;
-}
-
