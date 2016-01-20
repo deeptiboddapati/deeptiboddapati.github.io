@@ -32,9 +32,12 @@
 
 </head>
 
+
+
+
 <body> 
-  <div class="wrapper ">
-    <header class= "">
+  <div class="wrapper row ">
+    <header class= "col-md-3 col-md-offset-2">
       <div role="navigation" data-nav-status='toggle' class="hidden">
         <ul class="nav nav-pills nav-stacked navbar navbar-default navbar-fixed-top visible-xs ">
           <li> <a class="btn-default" href="#navtop"  type="button" data-toggle="collapse" data-target="#navtop" aria-expanded="false" aria-controls="navtop"> Thoughts about Techsupport</a></li>
@@ -51,6 +54,7 @@
           
         </ul>
       </div>
+      <div class="sidebar">
       <h1>Wabi Sabi Programming</h1>
       <div>
         <div id="sociallinks"><span class="glyphicon icon-g-github"></span><span class="glyphicon icon-g-github"></span></div>
@@ -62,36 +66,76 @@
         <span class="output">True</span></code>
         <p></p>
       </div>
-      <div role="navigation" >
-        <ul class="nav nav-pills nav-stacked">
-          <li> <a class="btn-default" href="#navc" type="button" data-toggle="collapse" data-target="#navc" aria-expanded="false" aria-controls="navc">Thoughts about Techsupport </a> </li>
-          <div class="collapse" id="navc">
-  
-            <ul class=" nav nav-pills nav-stacked">
+   <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+    
+  <div class="panel">
+      <a role="button" class="btn-default" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+    <div  id="headingOne">
+    
+       
+          Menuitem1
+        
+     
+    </div>
+    </a>
+    <div id="collapseOne" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        <ul class=" nav nav-pills nav-stacked">
               <li><a href="#">Action</a></li>
               <li><a href="#">Another action</a></li>
               <li><a href="#">Something else here</a></li>
               <li role="separator" class="divider"></li>
               <li><a href="#">Separated link</a></li>
             </ul>
-          </div>
-         <li> <a class="btn-default" href="#nav2"  type="button" data-toggle="collapse" data-target="#nav2" aria-expanded="false" aria-controls="nav2"> Thoughts about Techsupport</a></li>
-          <div class="collapse" id="nav2">
-
-            <ul class=" nav nav-pills nav-stacked">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">Separated link</a></li>
-            </ul>
-          </div>
-        </ul>
+    </div>
       </div>
-
-
+  </div>
+  <div class="panel ">
+    <a class="collapsed btn-default" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+    <div id="headingTwo">
+      
+        
+          Menuitem2
+       
+     
+    </div>
+     </a>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+        <ul class=" nav nav-pills nav-stacked">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+     </div>
+    </div>
+  </div>
+  <div class="panel ">
+    <a class="collapsed btn-default " role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+    <div  id="headingThree">     
+          Menuitem3
+    </div>
+    </a>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+           <ul class=" nav nav-pills nav-stacked">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
     </header>
-    <section class="">
+
+
+    <section class="col-md-6">
       <div>
         <h3>Nice to meet you, I'm Deepti.  </h3>
         <p>I started this blog because <a href="http://www.joelonsoftware.com/articles/CollegeAdvice.html">Joel</a> told me to learn how to write. I stole the name from the <a href="http://c2.com/cgi/wiki/wiki?WabiSabi">c2 Wiki</a>. My personal mission is plugging cognitive leaks so that people can do more awesome. I'll use this chunk of the web to talk about my code, my mission, my favorite tools, and my favorite books.</p>
@@ -107,7 +151,7 @@
         </div>
           <div class="col-md-8">
           <p>
-            I got the idea for BillTracker.org at an ATX OpenHack panel about how to bring tech into government. One of the panelists talked about how difficult following a bill through congress was. She likened it to watching a ping pong match. When ATX Hack For Change came around I recurited a team, wrote a pitch and planned out sprints with Trello. Having such a passionate team was a humbling and amazing experience. <ul class="collapse" id="readmore1"> Built with: <li> Django </li> <li> Annotator.js </li> </ul><a type="button" class="readmore" data-toggle="collapse" href="#readmore1" data-target="#readmore1" aria-expanded="true" aria-controls="readmore1">See More</a></p>
+            I got the idea for BillTracker.org at an ATX OpenHack panel about how to bring tech into government. One of the panelists talked about how difficult following a bill through congress was. She likened it to watching a ping pong match. When ATX Hack For Change came around I recurited a team, wrote a pitch and planned out sprints with Trello. Having such a passionate team was a humbling and amazing experience. <ul class="collapse" id="readmore1"> Built with: <li> Django </li> <li> Annotator.js </li> </ul><a type="button" class="readmore" data-toggle="collapse" href="#readmore1" data-target="" aria-expanded="true" aria-controls="readmore1">See More</a></p>
         </div>
       </div>
 
@@ -116,7 +160,7 @@
           <div class="col-md-6">
           <p>
             Lorem ipsum dolor sit amet, te fuisset commune cum. Ut mea salutatus scriptorem, no dolores abhorreant eos, sumo graecis ancillae mei ei. Mei ad dicit impetus periculis. Justo suavitate his ne, vis et brute singulis rationibus. Ei stet aliquip nec, annec quem percipit, cu mel lorem civibus offendit. Per nisl quaeque in, qui sumo quando urbanitas ne. <p class="collapse" id="readmore1">Et tation tamquam voluptatibus usu, admodum inciderint vis ad. Id quis magna mandamus qui, cu vel iudico ridens. Mundi malorum torquatos duo
-            et, mea an inani partem cotidieque. Vis nominavi detraxit no, et vix tale labore. Posse vivendum deserunt has in, quot.</p><a type="button" class="readmore" data-toggle="collapse" href="#readmore1" data-target="#readmore1" aria-expanded="true" aria-controls="readmore1">See More</a></p>
+            et, mea an inani partem cotidieque. Vis nominavi detraxit no, et vix tale labore. Posse vivendum deserunt has in, quot.</p><a type="button" class="readmore" data-toggle="collapse" href="#readmore1" data-target="" aria-expanded="true" aria-controls="readmore1">See More</a></p>
         </div>
       </div>
 
@@ -142,10 +186,11 @@
       </div>
       </div>
     </section>
-    <footer> 
+    <footer class="col-md-4"> 
       <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
     </footer>
-  </div>
+  </div> <!---wrapper end -->
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="javascripts/scale.fix.js"></script>
